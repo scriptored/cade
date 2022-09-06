@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CADE?</title>
+</head>
+<body>
+    <script>
+        function cade() {
+            video = document.getElementById('video');
+            botao = document.getElementById('botao');
+            botao.style.display = 'none';
+            video.style.display = 'inline';
+            video.play()
+            console.log('active')
+        }
+    </script>
+    <div class="principal">
+        <video src="./media/cadeololo.mp4" autoplay loop id="video" alt="cadeololo.mp4"></video>
+        <input type="button" onClick='cade()' value="CADE?" id='botao' class="cade">
+    </div>
+</body>
+</html>
